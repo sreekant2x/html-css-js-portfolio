@@ -1,0 +1,259 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP-NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(185, 185, 185);
+}
+
+.logo {
+  font-size: 2rem;
+}
+.logo:hover {
+  cursor: default;
+}
+
+/* HUMBURGUR MENU */
+
+#humburgur-nav {
+  display: none;
+}
+
+.humburgur-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.humburgur-icon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.humburgur-icon span {
+  width: 100%;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.humburgur-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.humburgur-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.humburgur-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.humburgur-icon span {
+  transform: none;
+}
+
+.humburgur-icon span {
+  opacity: 1;
+}
+
+.humburgur-icon span {
+  transform: none;
+}
+
+/* SECTION */
+
+section {
+  padding: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+/* PROFILE */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic_container {
+  width: 400px;
+  height: 400px;
+  margin: auto 0;
+  display: flex;
+  transition: transform 0.2s;
+}
+
+.section__pic_container:hover {
+  transform: scale(1.15); /* The image will zoom to 1.15 times its size */
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+
+}
+
+.section__text_p1 {
+  text-align: center;
+}
+
+.section__text_p2 {
+font-size: 1.75rem;
+margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials_container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.4s;
+}
+.icon:hover {
+  transform: scale(1.15);
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 330ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color1, .btn-color2 {
+  border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color1:hover, .btn-color2:hover {
+  cursor: pointer;
+}
+
+.btn-color1:hover, .btn-color2 {
+  background: rgb(53,53,53);
+  color: white;
+}
+
+.btn-color2:hover {
+  background: black;
+}
+.btn-color1 {
+  background: none;
+}
+/* .btn-color1 {
+  border: rgb(255,255,255) 0.1rem solid;
+} */
+
+
+
