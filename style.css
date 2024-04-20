@@ -167,11 +167,11 @@ section {
   height: 400px;
   margin: auto 0;
   display: flex;
-  transition: transform 0.2s;
+  /* transition: transform 0.2s; */
 }
 
 .section__pic_container:hover {
-  transform: scale(1.15); /* The image will zoom to 1.15 times its size */
+  transform: s; /* transform: scale(1.15); The image will zoom to 1.15 times its size */
 }
 
 .section__text {
@@ -181,7 +181,6 @@ section {
 
 .section__text p {
   font-weight: 600;
-
 }
 
 .section__text_p1 {
@@ -189,8 +188,8 @@ section {
 }
 
 .section__text_p2 {
-font-size: 1.75rem;
-margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -232,16 +231,19 @@ margin-bottom: 1rem;
   border-radius: 2rem;
 }
 
-.btn-color1, .btn-color2 {
-  border: rgb(53,53,53) 0.1rem solid;
+.btn-color1,
+.btn-color2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color1:hover, .btn-color2:hover {
+.btn-color1:hover,
+.btn-color2:hover {
   cursor: pointer;
 }
 
-.btn-color1:hover, .btn-color2 {
-  background: rgb(53,53,53);
+.btn-color1:hover,
+.btn-color2 {
+  background: rgb(53, 53, 53);
   color: white;
 }
 
@@ -255,5 +257,94 @@ margin-bottom: 1rem;
   border: rgb(255,255,255) 0.1rem solid;
 } */
 
+/* ABOUT */
 
+#about {
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.detail-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* EXPERIENCE SECTION*/
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article{
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+article .icon{
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
 
