@@ -4,227 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sreekant's Portfolio 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaquries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sreekant Saha</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="humburgur-nav">
-      <div class="logo">Sreekant Saha</div>
-      <div class="humburgur-menu">
-        <div class="humburgur-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic_container">
-        <img src="./assects/my_photo.png" alt="Sreekant profile pic" />
-      </div>
-      <div class="section__text">
-        <p class="section__text_p1">Hello, I'm</p>
-        <h1 class="title">Sreekant Saha</h1>
-        <p class="section__text_p2">BCA Graduate</p>
-        <div class="btn-container">
-          <button class="btn btn-color1" onclick="window.open('./assects/Sreekants-CV.pdf')">Download CV</button>
-          <button class="btn btn-color2" onclick="location.href='#contacts'">Contact Info</button>
-        </div>
-        <div id="socials_container">
-          <img src="./assects/linkedin.png" alt="My LinkeDin Profile" class="icon" onclick="location.href='https:/www.linkedin.com/in/sreekant-saha-927060286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" />
-
-          <img src="./assects/github.png" alt="My LinkeDin Profile" class="icon" onclick="location.href='https:/github.com/sreekant2x'" />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text_p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic_container">
-          <img src="./assects/my_photo2.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-container">
-            <div class="detail-container">
-              <img src="./assects/experience.png" alt="experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>
-                Fresher <br />
-                <!------>
-              </p>
-            </div>
-            <div class="detail-container">
-              <img src="./assects/education.png" alt="education icon" class="icon" />
-              <h3>Education</h3>
-              <p>
-                BCA Bachelor Degree<br />
-                <!---MSC?--->
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>Motivated person with a good grasp of programming languages including Python, HTML, CSS, and JavaScript. Eager to learn new knowledge and passion for technology. Committed to fostering innovation, contributing to team objectives, and pursuing professional growth. Have more interest in web technologies and user interface design and willingness to learn more daily.</p>
-          </div>
-        </div>
-      </div>
-      <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-      <p class="section__text_p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-container">
-          <div class="detail-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Tailwind CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="detail-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="projects">
-      <p class="section__text_p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-container">
-          <div class="detail-container color-container">
-            <div class="article-container">
-              <img src="./assects/project-1.png" alt="Project 1" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Animated Website</h2>
-            <div class="btn-container">
-              <button class="btn btn-color1 project-btn" onclick="location.href='https:github.com/sreekant2x/Animated-webside.git'">Github</button>
-              <button class="btn btn-color1 project-btn" onclick="location.href='https:sreekant2x.github.io/Animated-webside/'">Live Demo</button>
-            </div>
-          </div>
-          <div class="detail-container color-container">
-            <div class="article-container">
-              <img src="./assects/project-2.png" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Award Wining Website Clone</h2>
-            <div class="btn-container">
-              <button class="btn btn-color1 project-btn" onclick="location.href=''">Github</button>
-              <button class="btn btn-color1 project-btn" onclick="location.href=''">Live Demo</button>
-            </div>
-          </div>
-          <div class="detail-container color-container">
-            <div class="article-container">
-              <img src="./assects/project-3.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">My Portfolio Website</h2>
-            <div class="btn-container">
-              <button class="btn btn-color1 project-btn" onclick="location.href=''">Github</button>
-              <button class="btn btn-color1 project-btn" onclick="location.href=''">Live Demo</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contacts'" />
-    </section>
-    <section id="contacts">
-      <p class="section__text_p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assects/email.png" alt="Email-icon" class="icon contact-icon email-icon">
-          <p><a href="mailto:sreekantsaha@gmail.com">sreekantsaha@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assects/linkedin.png" alt="LinkeDin" class="icon contact-icon">
-          <p><a href="https:/www.linkedin.com/in/sreekant-saha-927060286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkeDin</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
+    <div id="main">
+      <nav id="desktop-nav">
+        <div class="logo">Sreekant Saha</div>
+        <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -233,9 +21,225 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Sreekant Saha. All Rights Reserved</p>
-    </footer>
+      <nav id="humburgur-nav">
+        <div class="logo">Sreekant Saha</div>
+        <div class="humburgur-menu">
+          <div class="humburgur-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic_container">
+          <img src="./assects/my_photo.png" alt="Sreekant profile pic" />
+        </div>
+        <div class="section__text">
+          <p class="section__text_p1">Hello, I'm</p>
+          <h1 class="title">Sreekant Saha</h1>
+          <p class="section__text_p2">BCA Graduate</p>
+          <div class="btn-container">
+            <button class="btn btn-color1" onclick="window.open('./assects/Sreekants-CV.pdf')">Download CV</button>
+            <button class="btn btn-color2" onclick="location.href='#contacts'">Contact Info</button>
+          </div>
+          <div id="socials_container">
+            <img src="./assects/linkedin.png" alt="My LinkeDin Profile" class="icon" onclick="location.href='https:/www.linkedin.com/in/sreekant-saha-927060286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" />
 
+            <img src="./assects/github.png" alt="My LinkeDin Profile" class="icon" onclick="location.href='https:/github.com/sreekant2x'" />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic_container">
+            <img src="./assects/my_photo2.jpg" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="about-container">
+              <div class="detail-container">
+                <img src="./assects/experience.png" alt="experience icon" class="icon" />
+                <h3>Experience</h3>
+                <p>
+                  Fresher <br />
+                  <!------>
+                </p>
+              </div>
+              <div class="detail-container">
+                <img src="./assects/education.png" alt="education icon" class="icon" />
+                <h3>Education</h3>
+                <p>
+                  BCA Bachelor Degree<br />
+                  <!---MSC?--->
+                </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>Motivated person with a good grasp of programming languages including Python, HTML, CSS, and JavaScript. Eager to learn new knowledge and passion for technology. Committed to fostering innovation, contributing to team objectives, and pursuing professional growth. Have more interest in web technologies and user interface design and willingness to learn more daily.</p>
+            </div>
+          </div>
+        </div>
+        <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      </section>
+      <section id="experience">
+        <p class="section__text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-container">
+            <div class="detail-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="detail-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assects/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </section>
+      <section id="projects">
+        <p class="section__text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-container">
+            <div class="detail-container color-container">
+              <div class="article-container">
+                <img src="./assects/project-1.png" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Animated Website</h2>
+              <div class="btn-container">
+                <button class="btn btn-color1 project-btn" onclick="location.href='https:github.com/sreekant2x/Animated-webside.git'">Github</button>
+                <button class="btn btn-color1 project-btn" onclick="location.href='https:sreekant2x.github.io/Animated-webside/'">Live Demo</button>
+              </div>
+            </div>
+            <div class="detail-container color-container">
+              <div class="article-container">
+                <img src="./assects/project-2.png" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Award Wining Website Clone</h2>
+              <div class="btn-container">
+                <button class="btn btn-color1 project-btn" onclick="location.href=''">Github</button>
+                <button class="btn btn-color1 project-btn" onclick="location.href=''">Live Demo</button>
+              </div>
+            </div>
+            <div class="detail-container color-container">
+              <div class="article-container">
+                <img src="./assects/project-3.png" alt="Project 3" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">My Portfolio Website</h2>
+              <div class="btn-container">
+                <button class="btn btn-color1 project-btn" onclick="location.href=''">Github</button>
+                <button class="btn btn-color1 project-btn" onclick="location.href=''">Live Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contacts'" />
+      </section>
+      <section id="contacts">
+        <p class="section__text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assects/email.png" alt="Email-icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:sreekantsaha@gmail.com">sreekantsaha@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assects/linkedin.png" alt="LinkeDin" class="icon contact-icon" />
+            <p><a href="https:/www.linkedin.com/in/sreekant-saha-927060286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkeDin</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sreekant Saha. All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
